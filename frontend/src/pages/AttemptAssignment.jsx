@@ -56,7 +56,6 @@ function AttemptAssignment() {
                 return
             }
 
-            // Update Monaco Editor and state
       setSql(progress.sqlText || "");
       if (editorRef.current) editorRef.current.setValue(progress.sqlText || "");
 

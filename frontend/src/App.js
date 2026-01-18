@@ -1,7 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import AssignmentsList from './pages/AssignmentsList';
