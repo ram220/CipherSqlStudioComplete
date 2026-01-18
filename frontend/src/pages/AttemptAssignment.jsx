@@ -14,7 +14,7 @@ function AttemptAssignment() {
     const editorRef=useRef()
 
     const deployedAPI="https://ciphersqlstudiocomplete.onrender.com"
-    const localAPI="http://localhost:8000"
+    //const localAPI="http://localhost:8000"
 
     const {id} =useParams()
     useEffect(()=>{

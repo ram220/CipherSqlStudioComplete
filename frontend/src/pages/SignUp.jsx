@@ -10,7 +10,7 @@ function SignUp() {
     const [password,setPassword]=useState("")
 
      const deployedAPI="https://ciphersqlstudiocomplete.onrender.com"
-  const localAPI="http://localhost:8000"
+  //const localAPI="http://localhost:8000"
 
     const navigate=useNavigate();
 

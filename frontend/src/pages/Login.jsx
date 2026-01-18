@@ -8,7 +8,7 @@ function Login() {
     const navigate=useNavigate()
 
     const deployedAPI="https://ciphersqlstudiocomplete.onrender.com"
-    const localAPI="http://localhost:8000"
+    //const localAPI="http://localhost:8000"
 
     const handleLogin=async()=>{
         if(!email || ! password){
