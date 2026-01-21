@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use(
     cors({
-        origin: ["http://localhost:3000", "https://ciphersqlstudio-three.vercel.app"],
+        origin: ["http://localhost:3000", "https://ciphersqlstudio-three.vercel.app","https://247withmygrocerystore.vercel.app"],
         methods: ["GET", "POST", "PUT", "DELETE"], // include all methods your API uses
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true
