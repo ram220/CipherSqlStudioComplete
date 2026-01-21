@@ -11,13 +11,6 @@ const progressRoutes=require('./routes/progressRoutes')
 const app=express();
 app.use(express.json())
 
-app.use(
-  cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
 
 // allow preflight requests
 app.options("*", cors());
