@@ -9,12 +9,18 @@ const assignmentRoutes=require("./routes/assignmentRoutes")
 const queryRoutes=require('./routes/queryRoutes')
 const progressRoutes=require('./routes/progressRoutes')
 const app=express();
+
+
+/* ✅ UNIVERSAL CORS — ALLOW ALL ORIGINS */
+app.use(cors({
+  origin: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
+app.options(/.*/, cors());
+
 app.use(express.json())
-
-
-// allow preflight requests
-app.options("*", cors());
-
 
 
 connectDB();
