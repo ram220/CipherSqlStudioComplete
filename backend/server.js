@@ -11,8 +11,6 @@ const progressRoutes=require('./routes/progressRoutes')
 const app=express();
 app.use(express.json())
 
-const cors = require("cors");
-
 app.use(
   cors({
     origin: "*",
