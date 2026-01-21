@@ -11,14 +11,19 @@ const progressRoutes=require('./routes/progressRoutes')
 const app=express();
 app.use(express.json())
 
+const cors = require("cors");
+
 app.use(
-    cors({
-        origin: ["http://localhost:3000", "https://ciphersqlstudio-three.vercel.app","https://247withmygrocerystore.vercel.app"],
-        methods: ["GET", "POST", "PUT", "DELETE"], // include all methods your API uses
-        allowedHeaders: ["Content-Type", "Authorization"],
-        credentials: true
-    })
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
 );
+
+// allow preflight requests
+app.options("*", cors());
+
 
 
 connectDB();
